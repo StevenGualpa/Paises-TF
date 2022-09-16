@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F6980C">
+
+
+    <TextView
+        android:id="@+id/TxrTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tensor Flow Lite"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:id="@+id/lylogo"
+        android:layout_below="@id/TxrTitulo">
+
+        <ImageView
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ImgCamara"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/BtnCapturar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Tomar Foto"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:onClick="CapturaFoto"/>
+
+    <RelativeLayout
+        android:id="@+id/LyClassd"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/lylogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txttituloclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:text="Clasificado como:"
+            android:textColor="#C30000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/txtresultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txttituloclass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/LyCoin"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_below="@+id/LyClassd"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20sp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttituloconfidences"
+        android:text="Coincidencias:"
+        android:textColor="#C30000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/txtcoincidencia"
+        android:layout_below="@+id/txttituloconfidences"
+        />
+
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>
